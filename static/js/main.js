@@ -7,6 +7,8 @@ const saveBtn = document.querySelector('.save')
 
 let draw = false
 
+var latest;
+
 function populate(size) {
     container.style.setProperty('--size', size)
     for (let i = 0; i < size * size; i++) {
@@ -15,10 +17,12 @@ function populate(size) {
 
         div.addEventListener('mouseover', function () {
             if (!draw) return
-            div.style.backgroundColor = color.value
+            div.style.backgroundColor = latest
+            latest = color.value
         })
         div.addEventListener('mousedown', function () {
-            div.style.backgroundColor = color.value
+            div.style.backgroundColor = latest
+            latest = color.value
         })
 
         container.appendChild(div)
