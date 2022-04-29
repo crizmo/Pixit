@@ -1,0 +1,115 @@
+#thestuff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.navbar,
+.container {
+    background-color: rgb(28, 28, 29);
+    width: 800px;
+    border-radius: 3px;
+}
+
+.navbar {
+    padding: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn,
+input {
+    height: 35px;
+    padding: 0 0.5em;
+}
+
+.reset {
+    background-color: white;
+    color: black;
+    border: 2px solid  orangered;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.reset:hover {
+    background-color: orangered;
+    color: white;
+    transform: scale(1.15);
+    transition: all 0.5s ease-in-out;
+}
+
+.color {
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 0.5em;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.size {
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 0.5em;
+    margin-right: 20px;
+    border-radius: 2px;
+}
+
+.container {
+    --size: 1;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(var(--size), 0.5fr);
+    grid-template-rows: repeat(var(--size), 0.5fr);
+    gap: 1.8px;
+    padding: 1px;
+}
+
+.pixel {
+    background-color: rgb(61, 61, 61);
+    border-radius: 1px;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar ,
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 0.2em;
+        margin-bottom: 0.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn,
+    input {
+        height: 25px;
+        padding: 0 0.25em;
+    }
+
+    .color {
+        padding: 0 .125em;
+        width: 50px;
+        margin: 0 0.25em;
+    }
+
+    .container {
+        --size: 1;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 0.5fr);
+        grid-template-rows: repeat(var(--size), 0.5fr);
+        gap: 1px;
+        padding: 5px;
+    }
+
+    .pixel {
+        background-color: rgb(61, 61, 61);
+        border-radius: 1px;
+    }
+}
