@@ -7,7 +7,7 @@
 
 .navbar,
 .container {
-    background-color: rgb(28, 28, 29);
+    background-color: rgb(0, 0, 0);
     width: 800px;
     border-radius: 3px;
 }
@@ -65,6 +65,7 @@ input {
     grid-template-rows: repeat(var(--size), 0.5fr);
     gap: 1.8px;
     padding: 1px;
+    background-color: black;
 }
 
 .pixel {
