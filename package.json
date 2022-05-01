@@ -2,5 +2,24 @@
   "dependencies": {
     "ejs": "^3.1.7",
     "express": "^4.18.0"
-  }
+  },
+  "name": "pixit",
+  "description": "A simple pixel art maker using js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crizmo/Pixit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crizmo/Pixit/issues"
+  },
+  "homepage": "https://github.com/crizmo/Pixit#readme"
 }
