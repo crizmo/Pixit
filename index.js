@@ -7,7 +7,7 @@ app.use('/static', express.static('./static'))
 app.use(express.json())
 
 app.listen(port, () => {
-    console.log(`listening on port http://localhost:${port}`)
+    console.log(`Server is now live`);
 })
 
 app.get('/', (req, res) => {
